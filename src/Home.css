@@ -1,0 +1,91 @@
+/* Coffee menu styling */
+.coffee-menu {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid; /* Use CSS Grid for two-column layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between the items */
+  }
+  
+  /* Coffee item styling */
+  .coffee-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Coffee item title */
+  .coffee-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 5px;
+  }
+  
+  /* Coffee item description */
+  .coffee-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Smart link styling */
+  .link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: green;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Link hover effects */
+  .link-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Link focus effect */
+  .link-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.6);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .coffee-menu {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  
+    .coffee-item {
+      padding: 15px;
+    }
+  
+    /* Adjust link button for mobile */
+    .link-button {
+      width: 100%;
+      text-align: center;
+    }
+    
+  }
+  /* Styling for the link */
+.link {
+    color: green;  /* Green text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .link:hover {
+    color: darkgreen; /* Change the color when the link is hovered */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  
